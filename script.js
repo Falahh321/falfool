@@ -191,3 +191,40 @@ alert("المتصفح لا يدعم المشاركة");
 }
 
 });
+/* ===== Like Button ===== */
+
+let likes = Number(localStorage.getItem("likes")) || 0;
+let liked = localStorage.getItem("liked") === "true";
+
+const likeBtn = document.getElementById("likeBtn");
+const likeCount = document.getElementById("likeCount");
+
+if(likeCount){
+    likeCount.textContent = likes;
+}
+
+if(likeBtn){
+
+    if(liked){
+        likeBtn.textContent = "❤️ معجب";
+    }
+
+    likeBtn.onclick = ()=>{
+
+        if(liked) return;
+
+        likes++;
+
+        liked = true;
+
+        localStorage.setItem("likes",likes);
+
+        localStorage.setItem("liked","true");
+
+        likeCount.textContent = likes;
+
+        likeBtn.textContent = "❤️ معجب";
+
+    };
+
+}

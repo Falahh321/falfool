@@ -225,3 +225,48 @@ padding:16px 18px;
 }
 
 }
+/* شاشة التحميل */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#090012;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity .8s ease,visibility .8s ease;
+}
+
+.loader-logo{
+font-size:50px;
+font-weight:900;
+color:#fff;
+text-shadow:0 0 20px #b000ff;
+margin-bottom:30px;
+}
+
+.loader-ring{
+width:80px;
+height:80px;
+border:5px solid rgba(255,255,255,.15);
+border-top:5px solid #b000ff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+box-shadow:0 0 30px #b000ff;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+.hide-loader{
+opacity:0;
+visibility:hidden;
+}

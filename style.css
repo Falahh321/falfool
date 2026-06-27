@@ -577,3 +577,26 @@ body{
     font-weight:bold;
 
 }
+/* ===== Greeting ===== */
+
+#greeting{
+    margin-top:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:700;
+    color:#b86cff;
+    text-shadow:0 0 12px rgba(184,108,255,.6);
+    animation:greetingFade 2s ease infinite alternate;
+}
+
+@keyframes greetingFade{
+
+    from{
+        opacity:.7;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}

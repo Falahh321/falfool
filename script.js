@@ -31,3 +31,25 @@ document.getElementById("loader").classList.add("hide-loader");
 },1800);
 
 });
+function updateClock() {
+    const now = new Date();
+
+    const time = now.toLocaleTimeString("ar-IQ", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+
+    const date = now.toLocaleDateString("ar-IQ", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
+
+    document.getElementById("clock").textContent = time;
+    document.getElementById("date").textContent = date;
+}
+
+setInterval(updateClock, 1000);
+updateClock();

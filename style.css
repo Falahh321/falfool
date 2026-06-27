@@ -382,3 +382,40 @@ visibility:hidden;
     }
 
 }
+/* ===== Page Animation ===== */
+
+body{
+    animation: pageFade .8s ease;
+}
+
+.main-card,
+.container,
+.card{
+    animation: cardShow 1s ease;
+}
+
+@keyframes pageFade{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes cardShow{
+
+    from{
+        opacity:0;
+        transform:translateY(40px) scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}

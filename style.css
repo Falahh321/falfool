@@ -434,3 +434,60 @@ body{
     will-change: transform;
 
 }
+/* ===== Theme Button ===== */
+
+#theme-toggle{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    background:#8a2be2;
+
+    color:#fff;
+
+    box-shadow:0 0 15px #8a2be2;
+
+    transition:.3s;
+
+    z-index:9999;
+
+}
+
+#theme-toggle:hover{
+
+    transform:scale(1.1);
+
+}
+
+.light-mode{
+
+    background:#f5f5f5 !important;
+
+    color:#222 !important;
+
+}
+
+.light-mode .card,
+.light-mode .container,
+.light-mode .main-card{
+
+    background:#ffffff !important;
+
+    color:#222 !important;
+
+}

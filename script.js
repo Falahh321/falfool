@@ -141,3 +141,22 @@ card.style.transform="rotateY(0deg) rotateX(0deg)";
 });
 
 }
+/* ===== Theme Switch ===== */
+
+const themeBtn=document.getElementById("theme-toggle");
+
+themeBtn.onclick=()=>{
+
+document.body.classList.toggle("light-mode");
+
+if(document.body.classList.contains("light-mode")){
+
+themeBtn.textContent="☀️";
+
+}else{
+
+themeBtn.textContent="🌙";
+
+}
+
+};

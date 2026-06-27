@@ -228,3 +228,30 @@ if(likeBtn){
     };
 
 }
+/* ===== Greeting ===== */
+
+const greeting = document.getElementById("greeting");
+
+if(greeting){
+
+    const hour = new Date().getHours();
+
+    let text = "";
+
+    if(hour >= 5 && hour < 12){
+
+        text = "☀️ صباح الخير";
+
+    }else if(hour >= 12 && hour < 18){
+
+        text = "🌤️ مساء الخير";
+
+    }else{
+
+        text = "🌙 مساء الخير";
+
+    }
+
+    greeting.textContent = text;
+
+}

@@ -337,3 +337,48 @@ visibility:hidden;
     }
 
 }
+/* ===== Profile Glow ===== */
+
+.profile-glow{
+    position:relative;
+    display:inline-block;
+}
+
+.profile-glow::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    background:conic-gradient(
+        #8a2be2,
+        #c84dff,
+        #ffffff,
+        #8a2be2
+    );
+
+    filter:blur(18px);
+
+    animation:rotateGlow 5s linear infinite;
+
+    z-index:-1;
+
+    opacity:.9;
+
+}
+
+@keyframes rotateGlow{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}

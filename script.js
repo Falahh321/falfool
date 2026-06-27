@@ -94,3 +94,23 @@ if(profileImage){
     wrapper.appendChild(profileImage);
 
 }
+/* ===== Welcome Message ===== */
+
+const hour = new Date().getHours();
+
+let message = "";
+
+if(hour < 12){
+
+    message = "☀️ صباح الخير";
+
+}else if(hour < 18){
+
+    message = "🌤️ مساء الخير";
+
+}else{
+
+    message = "🌙 مساء الخير";
+}
+
+console.log(message);

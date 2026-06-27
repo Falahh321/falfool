@@ -53,3 +53,25 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+/* ===== Animated Stars ===== */
+
+const starsContainer = document.getElementById("stars-container");
+
+for(let i=0;i<80;i++){
+
+    const star=document.createElement("span");
+
+    star.className="star";
+
+    star.style.left=Math.random()*100+"vw";
+
+    star.style.animationDuration=(6+Math.random()*10)+"s";
+
+    star.style.animationDelay=Math.random()*8+"s";
+
+    star.style.width=(1+Math.random()*3)+"px";
+    star.style.height=star.style.width;
+
+    starsContainer.appendChild(star);
+
+}

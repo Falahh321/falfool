@@ -160,3 +160,34 @@ themeBtn.textContent="🌙";
 }
 
 };
+/* ===== Copy & Share ===== */
+
+document.getElementById("copyLink")?.addEventListener("click",()=>{
+
+navigator.clipboard.writeText(location.href);
+
+alert("✅ تم نسخ الرابط");
+
+});
+
+document.getElementById("sharePage")?.addEventListener("click",()=>{
+
+if(navigator.share){
+
+navigator.share({
+
+title:document.title,
+
+text:"شوف صفحتي 👇",
+
+url:location.href
+
+});
+
+}else{
+
+alert("المتصفح لا يدعم المشاركة");
+
+}
+
+});

@@ -270,3 +270,25 @@ transform:rotate(360deg);
 opacity:0;
 visibility:hidden;
 }
+.live-time {
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    user-select: none;
+}
+
+#clock {
+    font-size: 22px;
+    color: #b86cff;
+    text-shadow: 0 0 10px #b86cff;
+}
+
+#date {
+    opacity: .8;
+    font-size: 14px;
+}

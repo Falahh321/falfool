@@ -75,3 +75,22 @@ for(let i=0;i<80;i++){
     starsContainer.appendChild(star);
 
 }
+/* ===== Add Glow Automatically ===== */
+
+const profileImage =
+document.querySelector("#profile") ||
+document.querySelector(".profile") ||
+document.querySelector(".avatar") ||
+document.querySelector("img");
+
+if(profileImage){
+
+    const wrapper=document.createElement("div");
+
+    wrapper.className="profile-glow";
+
+    profileImage.parentNode.insertBefore(wrapper,profileImage);
+
+    wrapper.appendChild(profileImage);
+
+}

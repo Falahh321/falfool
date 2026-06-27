@@ -22,3 +22,12 @@ window.addEventListener("load", () => {
     document.querySelector(".profile-box").style.opacity = "1";
     document.querySelector(".profile-box").style.transform = "translateY(0)";
 });
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").classList.add("hide-loader");
+
+},1800);
+
+});

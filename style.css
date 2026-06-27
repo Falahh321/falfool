@@ -530,3 +530,50 @@ body{
     box-shadow:0 0 20px #b86cff;
 
 }
+/* ===== Like Button ===== */
+
+.like-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-top:20px;
+}
+
+#likeBtn{
+
+    background:#ff2d75;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    box-shadow:0 0 15px rgba(255,45,117,.5);
+
+}
+
+#likeBtn:hover{
+
+    transform:scale(1.08);
+
+}
+
+#likeCount{
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}

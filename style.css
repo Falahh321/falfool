@@ -419,3 +419,18 @@ body{
     }
 
 }
+/* ===== 3D Card Effect ===== */
+
+.card,
+.container,
+.main-card{
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+    will-change: transform;
+
+}

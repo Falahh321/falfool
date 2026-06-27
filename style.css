@@ -491,3 +491,42 @@ body{
     color:#222 !important;
 
 }
+/* ===== Action Buttons ===== */
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.action-buttons button{
+
+    background:#8a2be2;
+
+    color:#fff;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    box-shadow:0 0 12px rgba(138,43,226,.5);
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px #b86cff;
+
+}

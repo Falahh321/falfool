@@ -292,3 +292,48 @@ visibility:hidden;
     opacity: .8;
     font-size: 14px;
 }
+/* ===== Animated Stars ===== */
+
+#stars-container{
+    position:fixed;
+    inset:0;
+    overflow:hidden;
+    z-index:-1;
+    pointer-events:none;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    border-radius:50%;
+    background:#ffffff;
+    box-shadow:
+        0 0 6px #fff,
+        0 0 12px #b86cff,
+        0 0 20px #b86cff;
+    animation:floatStar linear infinite;
+    opacity:.8;
+}
+
+@keyframes floatStar{
+
+    from{
+        transform:translateY(100vh) scale(.5);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    90%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-120px) scale(1.2);
+        opacity:0;
+    }
+
+}

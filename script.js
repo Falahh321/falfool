@@ -23,16 +23,15 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 let text = "اني اسمي فلاح اكل التفاح واعيش مرتاح 😂👍";
 let i = 0;
-function typing() {
+
+function typing(){
   let bio = document.getElementById("bio");
 
-  if (bio && i < text.length) {
+  if(i < text.length){
     bio.innerHTML += text.charAt(i);
     i++;
-    setTimeout(typing, 100);
+    setTimeout(typing,100);
   }
 }
 
-window.onload = function () {
-  typing();
-};
+typing();

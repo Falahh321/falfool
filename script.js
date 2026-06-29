@@ -23,7 +23,6 @@ updateDateTime();
 setInterval(updateDateTime, 1000);
 let text = "اني اسمي فلاح اكل التفاح واعيش مرتاح 😂👍";
 let i = 0;
-
 function typing() {
   let bio = document.getElementById("bio");
 
@@ -34,4 +33,6 @@ function typing() {
   }
 }
 
-typing();
+window.onload = function () {
+  typing();
+};
